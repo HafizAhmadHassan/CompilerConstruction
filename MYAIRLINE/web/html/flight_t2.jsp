@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Fixed table header</title>
+  
+  
+      <link rel="stylesheet" href="../css/book_flight_table.css">
+
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="../fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../style.css" rel="stylesheet" type="text/css">
+  
+</head>
+
+<body>
+  <section>
+  <!--for demo wrap-->
+ 
+ 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#inverseNavbar1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="../index.jsp">
+      
+<!--      	the site logo-->
+      	<img src="../images/logo.png" alt="site logo" />
+      	
+<!--      	site name ( keep span )-->
+      	<span>Welcome To Client  </span>Portal
+      </a>
+      
+<!--	</div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="inverseNavbar1">
+<!--     search form-->
+      </form>
+<!--      end search form-->
+     
+    </div>
+    <!-- /.navbar-collapse --> 
+
+
+
+	<ul style="color:white;list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+">
+		 <li style="float: left;"><h1>: New York :   To  :</h1></li>
+
+<li style="float: left;"><h1>:  Pakistan  :</h1></li>
+ <br>
+ <li style=" float: left;"><h1 style="font-size:40px">:  23-2-2017   To  :</h1></li>
+ 
+ <li style=" float: left;"><h1 style="font-size:40px">25-2-2017</h1></li>
+  
+</ul>
+
+
+ </div>
+  
+  
+  
+  <!-- /.container-fluid --> 
+</nav>
+
+  
+ 
+ <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <th>Economy Class</th>
+          <th>Bussiness Class</th>
+          <th>First Class</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td><h1 style="font-size:19px;text-align:left"><input type="time" id="myDate" value="20:02:09"></h1></td>
+          <td><h1 style="font-size:19px;text-align:left"><input type="time" id="myDate" value="20:02:09"></h1> </td>
+          <td><h1 style="font-size:19px;text-align:left">1000$</h1><input type="radio" name="gender" value="1000$"></td>
+          <td><h1 style="font-size:19px;text-align:left">2000$</h1><input type="radio" name="gender" value="2000$"></td>
+          <td><h1 style="font-size:19px;text-align:left">3000$</h1><input type="radio" name="gender" value="3000$"></td>
+        </tr>
+      </tbody>
+    </table>
+	
+	
+	
+  </div>
+</section>
+
+<br>	
+
+
+<!-- follow me template -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+</body>
+</html>

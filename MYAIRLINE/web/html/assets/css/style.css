@@ -1,0 +1,544 @@
+/*-- 
+AUTHOR   : rakesh535
+URL      : http://themeforest.net/user/rakesh535
+TEMPLATE : Spirit 404 - Animated 404 Error Page
+VERSION  : 1.0
+
+TABLE OF CONTENTS
+1.0 BASIC STYLE
+	1.1 BODY FONT-SIZE ACCORDING TO DEVICE WIDTH
+	1.2 GENERAL BOOTSTRAP RESET
+2.0 TYPOGRAPHY
+3.0 BUBBLES STYLE
+4.0 HOME AND RETURN BACK BUTTON
+5.0 SEARCH FORM
+6.0 SOCIAL ICONS
+	6.1 SOCIAL ICONS ANIMATION
+7.0 RESPONSIVE STYLE
+	7.1 EXTRA SMALL DEVICES, PHONES
+	7.2 SMALL DEVICES, TABLETS
+
+NOTE: All the measurements are in "em" instead of "px", so changing body font-size will effect all the elements.
+--*/
+
+
+/*-- ========================================= --
+	1.0 BASIC STYLE
+/*-- ========================================= --*/
+
+html {
+	font-size: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	font-size: 100%;
+	margin: 0;
+	min-height: 100%;
+	height: 100%;
+	background: #0D0D1A url(../img/bg2.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.red {
+	color: #DC4C42;
+}
+
+
+/*-- ================== 1.1 BODY FONT-SIZE ACCORDING TO DEVICE WIDTH ====================== --*/
+
+@media all and (max-width:767px) {
+	body {
+		font-size: 97% !important;
+	}
+}
+
+@media all and (max-width:1024px) and (min-width:768px) and (orientation: landscape) {
+	body {
+		font-size: 100% !important;
+	}
+}
+
+@media all and (max-width:1024px) and (min-width:768px) and (orientation: portrait) {
+	body {
+		font-size: 100% !important;
+	}
+}
+
+@media all and (max-width:1200px) and (min-width:1024px) {
+	body {
+		font-size: 85% !important;
+	}
+}
+
+@media all and (max-width:1366px) and (min-width:1200px) {
+	body {
+		font-size: 100% !important;
+	}
+}
+
+@media all and (max-width:1440px) and (min-width:1366px) {
+	body {
+		font-size: 105% !important;
+	}
+}
+
+@media all and (max-width:1680px) and (min-width:1440px) {
+	body {
+		font-size: 115% !important;
+	}
+}
+
+@media all and (max-width:1920px) and (min-width:1680px) {
+	body {
+		font-size: 140% !important;
+	}
+}
+
+@media all and (max-width:2048px) and (min-width:1920px) {
+	body {
+		font-size: 145% !important;
+	}
+}
+
+@media all and (max-width:2560px) and (min-width:2048px) {
+	body {
+		font-size: 155% !important;
+	}
+}
+
+@media all and (max-width:2880px) and (min-width:2560px) {
+	body {
+		font-size: 165% !important;
+	}
+}
+
+
+/*-- ================== 1.2 GENERAL BOOTSTRAP RESET ====================== --*/
+
+a {
+	text-decoration: none;
+}
+
+a:focus,
+a:active:focus {
+	outline: 0 none;
+}
+
+ul {
+	padding-left: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+	outline: 0 none;
+}
+
+input:focus {
+	outline: 0 none;
+	box-shadow: 0 0 0 transparent;
+}
+
+.form-control {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form-control,
+.btn {
+	border-radius: 0;
+}
+
+.form-control:focus {
+	border-color: #ffffff;
+}
+
+
+/*-- ========================================= --
+	2.0 TYPOGRAPHY
+/*-- ========================================= --*/
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 9em;
+	color: #ffffff;
+	margin-top: 0.1em;
+	margin-bottom: 0;
+	line-height: 1;
+	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 0.6em;
+	font-weight: 700;
+}
+
+
+/*-- ========================================= --
+	3.0 SPIRIT BUBBLES STYLE
+/*-- ========================================= --*/
+
+.spirit-bubbles {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+
+/*-- ========================================= --
+	4.0 HOME AND RETURN BACK BUTTON
+/*-- ========================================= --*/
+
+ul.return-btn {
+	margin-top: 3em;
+}
+
+ul.return-btn li {
+	display: inline-block;
+	margin-right: 0.5em;
+}
+
+ul.return-btn li a .icons-container {
+	border: 2px solid #ffffff;
+}
+
+ul.return-btn li a {
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+	background: transparent;
+	padding: 0.3em;
+	text-decoration: none;
+	font-weight: 400;
+	border-radius: 2em;
+	width: 12em;
+	display: block;
+	line-height: 2;
+	border: 2px solid #ffffff;
+	margin-bottom: 0.3em;
+}
+
+ul.return-btn li a:hover,
+ul.return-btn li a:active,
+ul.return-btn li a:focus {
+	background: rgba(16, 22, 34, 0.61);
+	-webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.18), 0 4px 15px 0 rgba(255, 255, 255, 0.15);
+	-moz-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.18), 0 4px 15px 0 rgba(255, 255, 255, 0.15);
+	box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.18), 0 4px 15px 0 rgba(255, 255, 255, 0.15);
+}
+
+.icons-container {
+	border-radius: 2em;
+	padding: 0.3em;
+	float: right;
+}
+
+.home-icon {
+	background: url(../img/home.png) no-repeat;
+	background: url(../img/home.svg) no-repeat;
+	background-size: contain;
+	height: 1.3em;
+	width: 1.3em;
+	float: right;
+	display: block;
+}
+
+.return-icon {
+	background: url(../img/return.png) no-repeat;
+	background: url(../img/return.svg) no-repeat;
+	background-size: contain;
+	height: 1.3em;
+	width: 1.3em;
+	float: right;
+	display: block;
+}
+
+
+/*-- ========================================= --
+	5.0 SEARCH FORM
+/*-- ========================================= --*/
+
+.form-control::-webkit-input-placeholder {
+	/* WebKit browsers */
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+	font-weight: lighter;
+}
+
+.form-control:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+	opacity: 1;
+	font-weight: lighter;
+}
+
+.form-control::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+	opacity: 1;
+	font-weight: lighter;
+}
+
+.form-control:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+	font-weight: lighter;
+}
+
+.search-form .input-group .input-group-btn {
+	font-size: inherit;
+}
+
+.search-form .input-group .input-group-btn:focus {
+	outline: 0 none;
+}
+
+.search-form .input-group .input-group-btn span:focus {
+	outline: 0 none;
+}
+
+.search-form input {
+	background: rgba(255, 255, 255, 0.5);
+	border: 2px solid #fff;
+	border-bottom-left-radius: 2em;
+	border-top-left-radius: 2em;
+	font-family: 'Oswald', sans-serif;
+	color: #11111D;
+	opacity: 1;
+	font-weight: lighter;
+	font-size: 1.3em;
+	line-height: 1.7;
+	height: inherit;
+	padding-left: 1.5em;
+	width: 100% !important;
+}
+
+.search-form button {
+	background: rgba(255, 255, 255, 0.5);
+	border: 2px solid #fff;
+	margin-left: -6px;
+	border-bottom-right-radius: 2em;
+	border-top-right-radius: 2em;
+	font-size: inherit;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.search-form button .search-icon {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.search-form button:hover .search-icon,
+.search-form button:active .search-icon,
+.search-form button:focus .search-icon {
+	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+
+.search-icon {
+	background: url(../img/search.png) no-repeat;
+	background: url(../img/search.svg) no-repeat;
+	background-size: contain;
+	height: 2.2em;
+	width: 2.2em;
+	display: block;
+}
+
+
+/*-- ========================================= --
+	6.0 SOCIAL ICONS
+/*-- ========================================= --*/
+
+ul.social-icons {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+ul.social-icons li {
+	display: inline-block;
+	margin-right: 0.3em;
+}
+
+ul.social-icons li:last-child {
+	margin-right: 0;
+}
+
+ul.social-icons li a {
+	font-size: 1.6em;
+	color: #ffffff;
+	padding: 0.2em 0.3em;
+	background: transparent;
+	border: 1px solid #ffffff;
+	border-radius: 0.12em;
+	display: block;
+}
+
+ul.social-icons li a:hover,
+ul.social-icons li a:active,
+ul.social-icons li a:focus {
+	background: rgba(16, 22, 34, 0.61);
+}
+
+
+/*-- ================== 6.1 SOCIAL ICONS ANIMATION ====================== --*/
+
+@-webkit-keyframes hvr-icon-wobble-vertical {
+	16.65% {
+		-webkit-transform: translateY(6px);
+		transform: translateY(6px);
+	}
+	33.3% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+	49.95% {
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+	}
+	66.6% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+	83.25% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(1px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes hvr-icon-wobble-vertical {
+	16.65% {
+		-webkit-transform: translateY(6px);
+		transform: translateY(6px);
+	}
+	33.3% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+	49.95% {
+		-webkit-transform: translateY(4px);
+		transform: translateY(4px);
+	}
+	66.6% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+	83.25% {
+		-webkit-transform: translateY(1px);
+		transform: translateY(1px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+.hvr-icon-wobble-vertical {
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.hvr-icon-wobble-vertical i {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.hvr-icon-wobble-vertical:hover i,
+.hvr-icon-wobble-vertical:focus i,
+.hvr-icon-wobble-vertical:active i {
+	-webkit-animation-name: hvr-icon-wobble-vertical;
+	animation-name: hvr-icon-wobble-vertical;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+
+/*-- ========================================= --
+	7.0 RESPONSIVE STYLE
+/*-- ========================================= --*/
+
+
+/*-- ================== 7.1 EXTRA SMALL DEVICES, PHONES ====================== --*/
+
+@media only screen and (min-height: 481px) {
+	html {
+		height: 100%;
+	}
+}
+
+
+/*-- ================== 7.2 SMALL DEVICES, TABLETS ====================== --*/
+
+@media only screen and (min-width: 768px) {
+	html {
+		height: 100%;
+	}
+	h1 {
+		margin-top: 0.3em;
+		font-size: 13em;
+	}
+	h2 {
+		font-size: 2em;
+		margin-bottom: 1.2em;
+	}
+	.form-inline.search-form .input-group {
+		width: 40%;
+	}
+}
