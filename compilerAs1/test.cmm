@@ -1,0 +1,24 @@
+int x;
+int y;
+out "input_value_of_x";
+in x;
+out "input_value_of_y";
+in y;
+if(x >y){
+out "X_is_greater_than_Y";
+out x;
+}
+else{
+out "Y_is_greater_than_X";
+out y;
+}
+while(x <= 10)
+{
+x:=x+1;
+}
+out "value of x is";
+out x;
+int c;
+c := x+y;
+out "value of c is";
+out c;

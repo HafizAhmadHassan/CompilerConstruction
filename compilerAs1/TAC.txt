@@ -1,0 +1,25 @@
+  int   x 
+  int   y 
+  out   inputvalueofx 
+  in   x 
+  out   inputvalueofy 
+  in   y 
+if  x   >   y  goto  8
+goto 11
+  out   XisgreaterthanY 
+  out   x 
+goto 13
+  out   YisgreaterthanX 
+  out   y 
+if  x   <=   10  goto  15
+goto 18
+t0 =  x  +  1 
+  x   := t0
+goto 13
+  out   valueofxis 
+  out   x 
+  int   c 
+t1 =  x  +  y 
+  c   := t1
+  out   valueofcis 
+  out   c 

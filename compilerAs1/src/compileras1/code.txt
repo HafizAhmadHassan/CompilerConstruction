@@ -1,0 +1,1 @@
+int numPrint(int num, int length)

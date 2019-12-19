@@ -1,0 +1,326 @@
+	Declaration() 
+
+		Statements() 
+
+			Statement() 
+
+				DeclareVariable() 
+
+				int 
+
+					Varid() 
+
+					id 
+
+				; 
+
+			Statements() 
+
+				Statement() 
+
+					DeclareVariable() 
+
+					int 
+
+						Varid() 
+
+						id 
+
+					; 
+
+				Statements() 
+
+					Statement() 
+
+						OUT() 
+
+						out 
+
+							outtype() 
+
+							String 
+
+						; 
+
+						in() 
+
+						in 
+
+						id 
+
+						; 
+
+					Statements() 
+
+						Statement() 
+
+							OUT() 
+
+							out 
+
+								outtype() 
+
+								String 
+
+							; 
+
+							in() 
+
+							in 
+
+							id 
+
+							; 
+
+							IF() 
+
+							if 
+
+							( 
+
+								con() 
+
+									P() 
+
+									id 
+
+								RO 
+
+									P() 
+
+									id 
+
+							) 
+
+								constatements() 
+
+									manystatements() 
+
+									{ 
+
+										Statements() 
+
+											Statement() 
+
+												OUT() 
+
+												out 
+
+													outtype() 
+
+													String 
+
+												; 
+
+											Statements() 
+
+												Statement() 
+
+													OUT() 
+
+													out 
+
+														outtype() 
+
+														id 
+
+													; 
+
+									} 
+
+							else 
+
+								constatements() 
+
+									manystatements() 
+
+									{ 
+
+										Statements() 
+
+											Statement() 
+
+												OUT() 
+
+												out 
+
+													outtype() 
+
+													String 
+
+												; 
+
+											Statements() 
+
+												Statement() 
+
+													OUT() 
+
+													out 
+
+														outtype() 
+
+														id 
+
+													; 
+
+									} 
+
+							WHILE() 
+
+							while 
+
+							( 
+
+								con() 
+
+									P() 
+
+									id 
+
+								RO 
+
+									P() 
+
+									Integer 
+
+							) 
+
+								constatements() 
+
+									manystatements() 
+
+									{ 
+
+										Statements() 
+
+											Statement() 
+
+												InitializeVariable() 
+
+												id 
+
+												Assign Op 
+
+													IniVar() 
+
+														E() 
+
+															T() 
+
+																f() 
+
+																id 
+
+																R() 
+
+																+ A0
+
+																	T() 
+
+																		f() 
+
+																		Integer 
+
+														; 
+
+											} 
+
+								Statements() 
+
+									Statement() 
+
+										OUT() 
+
+										out 
+
+											outtype() 
+
+											String 
+
+										; 
+
+									Statements() 
+
+										Statement() 
+
+											OUT() 
+
+											out 
+
+												outtype() 
+
+												id 
+
+											; 
+
+											DeclareVariable() 
+
+											int 
+
+												Varid() 
+
+												id 
+
+											; 
+
+										Statements() 
+
+											Statement() 
+
+												InitializeVariable() 
+
+												id 
+
+												Assign Op 
+
+													IniVar() 
+
+														E() 
+
+															T() 
+
+																f() 
+
+																id 
+
+																R() 
+
+																+ A0
+
+																	T() 
+
+																		f() 
+
+																		id 
+
+														; 
+
+													Statements() 
+
+														Statement() 
+
+															OUT() 
+
+															out 
+
+																outtype() 
+
+																String 
+
+															; 
+
+														Statements() 
+
+															Statement() 
+
+																OUT() 
+
+																out 
+
+																	outtype() 
+
+																	id 
+
+																; 
+

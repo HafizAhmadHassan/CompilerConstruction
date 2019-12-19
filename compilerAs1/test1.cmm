@@ -1,0 +1,21 @@
+o := numPrint( f,b,c)
+int numPrint(int num , int length)
+{
+int x;
+int y;
+while(x>10){
+max := x ;
+char x;
+char y;
+t := 4;
+}
+if(x > 10){
+char x;
+c := 4;
+}
+else{
+c:=5;
+}
+ c := a+d+b-c;
+}
+
